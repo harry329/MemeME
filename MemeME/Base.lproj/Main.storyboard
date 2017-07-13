@@ -35,6 +35,11 @@
                                             <action selector="albumImagePicker:" destination="BYZ-38-t0r" id="oHh-Uy-S9A"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem title="Share" id="EaD-gm-tit">
+                                        <connections>
+                                            <action selector="shareMeme:" destination="BYZ-38-t0r" id="kX4-bB-sye"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E9X-Nc-kRG">
@@ -46,21 +51,24 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Bottom" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vCe-6s-YP8">
                                 <rect key="frame" x="139" y="500" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="bottomText" destination="vCe-6s-YP8" id="UVT-RW-SgZ"/>
                         <outlet property="cameraButton" destination="m7x-9s-lB8" id="J2V-MC-9ev"/>
                         <outlet property="imageView" destination="E9X-Nc-kRG" id="Gdx-Mi-foN"/>
+                        <outlet property="shareButton" destination="EaD-gm-tit" id="fwo-9s-psw"/>
+                        <outlet property="topText" destination="K3F-T1-b3Y" id="zwD-38-waK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
